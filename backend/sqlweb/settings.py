@@ -53,6 +53,19 @@ AUTHENTICATION_BACKENDS = (
     'guardian.backends.ObjectPermissionBackend',
 )
 
+LDAP_SERVER = ''
+LDAP_BIND_DOMAIN = ''
+
+# ldap settings
+LDAP_SETTINGS = {
+    'SERVER': '',
+    'PORT': 0,
+    'BIND_USER': '',
+    'BIND_PASSWORD': '',
+    'BIND_DOMAIN': '',
+    'BASE_DN': '',
+}
+
 # jwt setting
 JWT_AUTH = {
     'JWT_ENCODE_HANDLER':
